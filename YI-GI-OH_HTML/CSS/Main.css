@@ -1,0 +1,128 @@
+body{
+    cursor: url("../ImagemSom/cursor/yugicursor.png"), default;
+}
+
+a,button,img:hover,button:hover,a:hover{
+    cursor: url("../ImagemSom/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
+.bg-video,.container,.card-box__container{
+    display: flex;
+    height: 100vh;
+}
+
+.versus-top,.versus-bottom,#time{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bg-video{
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center
+}.bg-video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 50%,rgba(0,0,0,1) 100%)
+}
+
+.bg-video .video{
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    z-index: 3;
+}
+
+.container__left{
+    display: flex;
+    width: 35%;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
+}
+
+.container__right{
+    width: 65%
+}
+
+.score_box, .card_details{
+    background-color: white;
+    padding: 30px
+}
+
+.frame{
+    border: 3px solid black;
+    border-radius: 5px
+}
+
+.card_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%
+}
+
+#card-name{
+    font-size: 0.7rem
+}
+
+#card-type{
+    font-size: 1rem
+}
+
+.card-box__container{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.4rem
+}
+
+.card-versus__container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    padding: 0.3rem;
+    height: 300px
+}
+
+.versus-bottom{
+    margin-top: 1rem
+}
+
+#next-duel{
+    display: none;
+}
+
+.card-box{
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around
+}
+
+.card-infield{
+    height: 11.2rem;
+    width: 8rem;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+.card{
+
+}.card:hover{
+    transform: scale(1.2)
+}
